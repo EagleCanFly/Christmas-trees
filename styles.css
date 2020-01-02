@@ -31,7 +31,8 @@
     line-height: 0.5rem;
 }
 .callInfo p {
-    padding: 0.4em;
+    padding: 0.5em;
+    line-height: 1em;
 }
 .callOrder {
     display: flex;
@@ -53,9 +54,13 @@ nav {
     width: 100vw;
     font-size: 18px;
 }
+nav ul {
+    display: flex;
+    justify-content: center;
+}
 nav li {
     display: inline-block;
-    padding: 7px 3rem;
+    padding: 0.5rem 1rem;
 }
 nav li a {
     color: #fff;
@@ -99,8 +104,6 @@ nav li a {
 .price_form {
     background-color: #fff;
     text-align: center;
-    /* width: 30%; */
-    /* height: 300px; */
     margin: 4em auto 0 auto;
     padding: 2em 1em;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
@@ -139,4 +142,29 @@ nav li a {
 
 .about {
     margin: 10em auto;
+}
+
+
+/* media-queries */
+
+@media screen and (max-width: 850px) {
+   .header {
+       flex-direction: column;
+   }
+   .header .logo {
+       margin: 5px auto;
+   }
+   nav {
+       height: 24vh;
+   }
+   nav ul {
+       flex-direction: column;
+       
+   }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        /* display: none; */
+    }
 }
