@@ -4,6 +4,9 @@
     padding: 0;
     font-family: 'PT sans', serif;
 }
+body {
+    font-size: 16px;
+}
 
 .wrapper {
     margin: 0 auto;
@@ -80,12 +83,6 @@ nav li a {
 .vp_top {
     margin-top:70px;
     margin-bottom: 120px;
-
-}
-.viewport .vp_top p {
-    margin-top: 1.5rem;
-    font-size: 29px;
-    line-height: 1.2em;
 }
 .viewport .vp_top h2 {
     font-size: 50px;
@@ -93,6 +90,11 @@ nav li a {
 }
 .viewport .vp_top h3 {
     font-size: 44px;
+}
+.viewport .vp_top p {
+    margin-top: 1.5rem;
+    font-size: 29px;
+    line-height: 1.2em;
 }
 .green {
     display: inline-block;
@@ -155,16 +157,31 @@ nav li a {
        margin: 5px auto;
    }
    nav {
-       height: 24vh;
+       height: 160px;
    }
    nav ul {
        flex-direction: column;
-       
    }
+   .viewport .vp_top h2 {
+       font-size: 40px;
+   }
+   .viewport .vp_top h3 {
+    font-size: 34px;
+}
+    .viewport .vp_top p {
+        font-size: 24px;
 }
 
-@media screen and (max-width: 768px) {
-    body {
-      
+@media screen and (max-width: 500px) {
+    .contacts {
+        flex-direction: column;
+    }
+    .callInfo {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .vp_top {
+        margin-top: 20px;
+        margin-bottom: 0;
     }
 }
