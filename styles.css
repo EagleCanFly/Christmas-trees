@@ -264,7 +264,8 @@ form input {
     padding-top: 10px;
 }
 
-/* setups section */
+/* setups section  */
+/* doesn't work in chrome */
 
 .setups_section {
     background-image: url(/images/bg-3.png);
@@ -277,6 +278,7 @@ form input {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-bottom: 76px;
 }
 .setups_section h2 {
     font-size: 36px;
@@ -307,6 +309,40 @@ form input {
     list-style-image: url(/images/three_icon.png);
     padding: 0 45px;
 }
+
+/* reviews section */
+
+.review_row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.review_section h2 {
+    text-align: center;
+    margin: 40px auto;
+    font-size: 36px;
+}
+.review {
+    display: flex;
+    width: 350px;
+    min-width: 300px;
+    margin-right: 160px;
+}
+.review img {
+    height: 150px;
+}
+.buyer_info {
+    min-width: 300px;
+    text-align: left;
+    margin: 10px 40px;
+}
+.buyer_info button {
+    width: 100%;
+    margin-top: 20px;
+}
+
 /* media-queries */
 
 @media screen and (max-width: 850px) {
@@ -344,6 +380,7 @@ form input {
     flex-wrap: wrap;
     margin: 0 auto;
 }
+}
 
 @media screen and (max-width: 500px) {
     .contacts {
@@ -371,5 +408,12 @@ form input {
         padding-bottom: 10px;
     }
     .tree_list {
-        margin: 0 auto;
+        margin: 0 auto;   
     }
+    .review {
+        margin-right: 40px;
+    }
+    .review img {
+        display: none;
+    }
+} 
