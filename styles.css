@@ -343,6 +343,84 @@ form input {
     margin-top: 20px;
 }
 
+/* production section */
+
+.production_section {
+    margin-top: 40px;
+    background-image: url(/images/bg-4.png);
+    /* height: 500px; */
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+.production_section h2 {
+    margin-top: 100px;
+}
+.production_row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 18px;
+    margin-top: 40px;
+}
+.prod_img {
+    margin: 40px 10px;
+}
+/* artifitial_section */
+
+.artificial_section {
+    background-image: url(/images/bg-5.png);
+    /* height: 1155px; */
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+ 
+}
+.artificial_section h3 {
+    padding: 40px 0;
+    font-size: 36px;
+}
+
+.artificial_section--firstRow {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding-bottom: 75px;
+}
+.uglyTreeCard {
+    background-color: #fff;
+    color: #000;
+    width: 220px;
+    margin: 20px;
+}
+.uglyTreeCard img {
+    margin: 10px;
+}
+.uglyTreeCard button {
+    margin: 10px;
+}
+.uglyTreeCard h6 {
+    font-size: 16px;
+}
+.uglyTreeCard p {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.3);
+    margin: 7px auto;
+}
+.uglyTreeCard ul span {
+    font-weight: bold;
+}
+/* google maps */
+.space {
+    background-color: #099;
+    height: 100px;
+    width: 100%;
+}
+.googlemaps {
+    
+}
 /* media-queries */
 
 @media screen and (max-width: 850px) {
