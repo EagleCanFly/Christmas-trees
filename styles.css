@@ -78,7 +78,7 @@ nav li a {
     text-align: center;
     background-image: url(images/bg-1.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
     background-size: cover; 
     height: 100%;
     width: 100vw;
@@ -199,7 +199,7 @@ nav li a {
     text-align: center;
     background-image: url(images/bg-2.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
     background-size: cover; 
     height: 100%;
     width: 100vw;
@@ -371,12 +371,12 @@ form input {
 
 .artificial_section {
     background-image: url(/images/bg-5.png);
-    /* height: 1155px; */
+    background-repeat: no-repeat;
     height: 100%;
     width: 100%;
     text-align: center;
     color: #fff;
- 
+    background-size: cover;
 }
 .artificial_section h3 {
     padding: 40px 0;
@@ -387,7 +387,7 @@ form input {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    padding-bottom: 75px;
+    padding-bottom: 60px;
 }
 .uglyTreeCard {
     background-color: #fff;
@@ -409,19 +409,64 @@ form input {
     color: rgba(0, 0, 0, 0.3);
     margin: 7px auto;
 }
+.uglyTreeCard ul {
+    list-style-type: none;
+}
 .uglyTreeCard ul span {
     font-weight: bold;
 }
-/* google maps */
-.space {
-    background-color: #099;
-    height: 100px;
-    width: 100%;
+.break {
+    flex-basis: 100%;
+    height: 0;
+    display: none;
 }
-.googlemaps {
-    
+/* alive_trees_section */
+
+.alive_trees_section {
+    text-align: center;
+    background-color: #f4f4f4;
 }
+.alive_trees_section h3 {
+    font-size: 36px;
+    font-weight: bold;
+    padding-top: 70px;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+}
+/* candie_trees_section */
+
+.candie_trees_section {
+    text-align: center;
+    background-image: url(/images/bg-6.png);
+    color: #fff;
+}
+.candie_trees_section h3 {
+    font-size: 36px;
+    font-weight: bold;
+    padding-top: 70px;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+}
+/* decoration_for_trees_section */
+
+.decoration_for_trees_section {
+    text-align: center;
+    background-color: #f4f4f4;
+}
+.decoration_for_trees_section h3 {
+    font-size: 36px;
+    font-weight: bold;
+    padding-top: 70px;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+}
+
 /* media-queries */
+@media screen and (max-width: 1040px) {
+    .break {
+        display: block;
+    }
+}
 
 @media screen and (max-width: 850px) {
    .header {
